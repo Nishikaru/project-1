@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <!-- hero section --> 
+  <section style="background: url('/imgs/Group\ 1000001621.png'); background-repeat: no-repeat; background-size: 100% 41%;" class="relative py-8 px-[10%] h-screen flex items-center">
+    <nav id="scroll"  class="fixed top-0 left-0 w-screen py-8 px-[10%] flex justify-between items-center text-white z-50">
+      <!-- brand name -->
+      <div class="text-3xl font-medium">EXE.</div>
+      <div class="flex gap-6">
+        <a href="#">Plans</a>
+        <a href="#">Resource</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <button class="bg-[#c9c9c981] py-1 px-4 rounded-full">button</button>
+      </div>
+    </nav>
+    <div>
+      <div>
+        <div class="flex flex-col gap-10">
+          <img class="w-[35vw]" src="./imgs/Mask Group.png" alt="">
+          <p class="w-[40%] md:w-auto">Automate the way you search through hashtags and suggested <br>
+            profiles to find results 100x faster.
+            </p>
+            <button class="bg-[#0b1844d0] w-fit py-1 px-4 rounded-full text-white">button</button>
+        </div>
+      </div>
+      <div>
+        <img class="absolute right-0 top-[50%] translate-y-[-50%] w-[35vw]" src="./imgs/Group 1000001628.png" alt="">
+      </div>
+      <!-- company logos -->
+      <div class="absolute w-screen left-0 bottom-0 px-[10%] pb-10 flex items-center justify-center">
+        <img class="mx-auto" src="./imgs/company logo.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Solutions for every need section -->
+  <section class="flex flex-col gap-12 items-center my-[10vh]">
+    <div class="flex flex-col gap-10">
+      <h1 class="text-3xl font-medium text-center">Solutions for every need</h1>
+      <p class="text-center">Join thousands of marketers and entrepreneurs for a 2-day event at <br> the forefront of social commerce.</p>
+    </div>
+    <div class="flex items-center gap-12">
+      <div class="flex flex-col gap-3">
+        <p class="text-[#B33CDB]">Influencer</p>
+        <h3 class="text-xl font-medium">Influencer marketing</h3>
+        <p>Create infinite pieces of content with our <br> influencer product. Build,streamline,manage <br> large-scale influencer programs</p>
+        <p>Learn More</p>
+      </div>
+      <div>
+        <img class="mb-[-100px]" src="./imgs/card.png" alt="">
+      </div>
+    </div>
+    <div class="flex items-center gap-12">
+      <div>
+        <img class="mb-[-100px]" src="./imgs/profile.png" alt="">
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="text-[#FBBA33]">Community</p>
+        <h3 class="text-xl font-medium">Community marketing</h3>
+        <p>Bring your relationships to new heights with <br> our community product. Discover your <br> biggest enthusiasts </p>
+        <p>Learn More</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-12">
+      <div class="flex flex-col gap-3">
+        <p class="text-[#DE2879]">services</p>
+        <h3 class="text-xl font-medium">Managed services</h3>
+        <p>Our full-service solution lets our experts do <br> the heavy lifting to optimize your community <br> for brand building and storytelling</p>
+        <p>Learn More</p>
+      </div>
+      <div>
+        <img class="mb-[-100px]" src="./imgs/card2.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- last sec -->
+  <section class="h-[60vh] bg-[#231A36] flex flex-col gap-12 px-[20%] justify-center items-center mt-[10vh]">
+    <h1 class="text-4xl font-medium text-white text-center">Search through more than 11 million <br> social media profiles</h1>
+    <p class="text-center text-sm text-[#7B9292]">Heepsy’s search filters help you find exactly what you’re looking for, <br> and our influencer reports provide you with the metrics</p>
+    <div class="flex justify-between w-full">
+      <div class="text-white flex flex-col items-center">
+        <h2 class="text-3xl font-semibold">2260</h2>
+        <p class="text-sm">Satisfied Brands</p>
+      </div>
+      <div class="text-white flex flex-col items-center">
+        <h2 class="text-3xl font-semibold">1324</h2>
+        <p class="text-sm">Satisfied Clients</p>
+      </div>
+      <div class="text-white flex flex-col items-center">
+        <h2 class="text-3xl font-semibold">3453</h2>
+        <p class="text-sm">Sponsored</p>
+      </div>
+      <div class="text-white flex flex-col items-center">
+        <h2 class="text-3xl font-semibold">9786</h2>
+        <p class="text-sm">Completed</p>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY 
+  var element = document.getElementById('scroll');
+  console.log(scrollPosition)
+if (scrollPosition > 10) {
+  element.classList.add('bg-purple-600');
+}
+else {
+element.classList.remove('bg-purple-600');
+}
+
+});
+
+</script>
+</html>
